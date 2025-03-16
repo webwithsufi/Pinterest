@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy, sans-serif;
+  /* Added sans-serif fallback */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+#main nav {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Added subtle shadow */
+  position: sticky;
+  /* Keeps nav fixed at the top */
+  top: 0;
+  z-index: 100;
+  /* Ensure nav is above content */
+}
+
+nav .n-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  /* Adjusted width */
+  padding-left: 1vw;
+}
+
+.n-left img {
+  height: 40px;
+  /* Adjusted height */
+  margin-right: 10px;
+}
+
+.n-left h3 {
+  font-size: 16px;
+  margin-left: 1.5vw;
+  font-weight: 500;
+}
+
+nav .n-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  /* Adjusted width */
+}
+
+.n-center input {
+  width: 80%;
+  /* Adjusted width */
+  height: 40px;
+  /* Adjusted height */
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 0 2vw;
+  outline-color: skyblue;
+  border: 1px solid #ddd;
+  /* Added border */
+}
+
+nav .n-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Align right to the end */
+  gap: 10px;
+  height: 100%;
+  width: 25%;
+  /* Adjusted width */
+  padding-right: 1vw;
+}
+
+.btn {
+  padding: 10px 20px;
+  /* Adjusted padding */
+  border-radius: 25px;
+  background-color: #e9e9e9;
+  /* Lightened background */
+  border: none;
+  font-weight: 500;
+  font-family: gilroy, sans-serif;
+  letter-spacing: 0.5px;
+  /* Adjusted letter spacing */
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: red;
+  color: #fff;
+}
+
+.center {
+  column-count: 4;
+  max-width: 60rem;
+  margin: 20px auto;
+  /* Centered with top and bottom margin */
+  column-gap: 10px;
+  /* Added gap between columns */
+  padding: 0 10px;
+  /* Added padding to sides */
+}
+
+.card {
+  margin-bottom: 10px;
+  break-inside: avoid;
+  /* Prevents cards from breaking across columns */
+  border-radius: 10px;
+  overflow: hidden;
+  /* Ensures image doesn't overflow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Lightened shadow */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  /* Maintains aspect ratio */
+  display: block;
+  /* Removes extra space below image */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card h4 {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.option {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 60rem;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option .card {
+  box-shadow: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.option .card h4 {
+  padding: 0;
+}
